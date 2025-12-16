@@ -8,6 +8,7 @@ con <- mRpostman::configure_imap(url = "imaps://imap.gmail.com",
                                  username = Sys.getenv("EMAIL"),
                                  password = Sys.getenv("PASSWORD"))
 
+
 con$list_server_capabilities()
 
 con$select_folder("INBOX")
